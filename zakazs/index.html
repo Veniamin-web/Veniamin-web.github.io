@@ -5,12 +5,13 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Объявления здесь</title>
+   <title>Document</title>
    <link rel="preconnect" href="https://fonts.gstatic.com">
    <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet">
-   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/font.css">
+   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -31,6 +32,13 @@
                </a>
                <button href="#" class="header__button-btn">Подать объявление</button>
             </div>
+            <a href="#" class="header__button-link mobail">
+               <span class="header__button-arrow">
+                  <img src="images/arrow-left.svg" alt="Стрелка">
+               </span>
+               <span>Вход</span>
+            </a>
+            <button href="#" class="header__button-btn mobail">Подать объявление</button>
          </div>
          <div class="header__content">
             <h1 class="header__title">
@@ -41,14 +49,16 @@
             </span>
             <form class="header__form">
                <input class="header__form-input" placeholder="Поиск объявлений...">
-               <select name="header__form-select">
-                  <option>Все категории</option>
-                  <option>Option</option>
-                  <option>Textarea</option>
-                  <option>Label</option>
-                  <option>Fieldset</option>
-                  <option>Legend</option>
-               </select </div>
+               <span class="header__form-span">
+                  <select name="header__form-select">
+                     <option>Все категории</option>
+                     <option>Option</option>
+                     <option>Textarea</option>
+                     <option>Label</option>
+                     <option>Fieldset</option>
+                     <option>Legend</option>
+                  </select>
+               </span>
                <span class="header__form-span">
                   <select name="header__form-select">
                      <option>Кабул</option>
