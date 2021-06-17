@@ -1,21 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-   <meta charset="UTF-8">
-   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Объявления здесь (Регистрация) </title>
-   <link rel="preconnect" href="https://fonts.gstatic.com">
-   <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-   <link rel="stylesheet" href="css/font.css">
-   <link rel="stylesheet" href="css/style.min.css">
-</head>
-
-<body>
-   <header class="header header-fixed" style="background: #09233D; padding: 11px 0;">
+  <header class="header header-fixed" style="background: #09233D; padding: 11px 0;">
       <div class="differ-container">
          <div class="header__top" style="margin: 0; flex-wrap: nowrap;">
             <div class="header__logo header-indent">
@@ -57,39 +40,65 @@
                <span></span>
             </button>
             <div class="header__burger-items">
-               <div class="header__button" style="margin-left: 30px;">
-                  <a href="#" class="header__button-link header-button-indent" style="margin: 0;">
+               <div class="header__burger-item">
+                  <div class="header__button" style="margin-left: 30px;">
+                     <a href="#" class="header__button-link header-button-indent" style="margin: 0;">
+                        <span class="header__button-arrow">
+                           <img src="images/arrow-left.svg" alt="Стрелка">
+                        </span>
+                        <span>Вход</span>
+                     </a>
+                  </div>
+                  <a href="#" class="header__button-link mobail" style="display: none !important;">
                      <span class="header__button-arrow">
                         <img src="images/arrow-left.svg" alt="Стрелка">
                      </span>
                      <span>Вход</span>
                   </a>
+                  <select class="header__lange">
+                     <option>ru</option>
+                     <option>ua</option>
+                     <option>en</option>
+                  </select>
+                  <div class="header__icon">
+                     <div class="header__icon-item">
+                        <a href="#" class="header__icon-link">
+                           <img src="images/basket.svg" alt="Корзина">
+                           <span>1</span>
+                        </a>
+                     </div>
+                     <div class="header__icon-item">
+                        <a href="#" class="header__icon-link">
+                           <img src="images/like.svg" alt="понравившейся">
+                           <span>2</span>
+                        </a>
+                     </div>
+                  </div>
                </div>
-               <a href="#" class="header__button-link mobail" style="display: none !important;">
-                  <span class="header__button-arrow">
-                     <img src="images/arrow-left.svg" alt="Стрелка">
+               <form class="header__form">
+                  <input class="header__form-input" placeholder="Поиск объявлений...">
+                  <span class="header__form-span">
+                     <select>
+                        <option>Все категории</option>
+                        <option>Option</option>
+                        <option>Textarea</option>
+                        <option>Label</option>
+                        <option>Fieldset</option>
+                        <option>Legend</option>
+                     </select>
                   </span>
-                  <span>Вход</span>
-               </a>
-               <select class="header__lange">
-                  <option>ru</option>
-                  <option>ua</option>
-                  <option>en</option>
-               </select>
-               <div class="header__icon">
-                  <div class="header__icon-item">
-                     <a href="#" class="header__icon-link">
-                        <img src="images/basket.svg" alt="Корзина">
-                        <span>1</span>
-                     </a>
-                  </div>
-                  <div class="header__icon-item">
-                     <a href="#" class="header__icon-link">
-                        <img src="images/like.svg" alt="понравившейся">
-                        <span>2</span>
-                     </a>
-                  </div>
-               </div>
+                  <span class="header__form-span">
+                     <select>
+                        <option>Кабул</option>
+                        <option>Option</option>
+                        <option>Textarea</option>
+                        <option>Label</option>
+                        <option>Fieldset</option>
+                        <option>Legend</option>
+                     </select </div>
+                  </span>
+                  <button class="header__form-btn" type="submit">Поиск</button>
+               </form>
             </div>
             <div class="header__butto header-item-mobail" style="margin-left: 30px;">
                <a href="#" class="header__button-link" style="margin: 0;">
@@ -139,7 +148,7 @@
          </ul>
       </div>
    </div>
-     <section class="registration">
+   <section class="registration">
       <div class="container">
          <form class="registration__form">
             <div class="registration__form-wrapper">
@@ -148,7 +157,7 @@
                      Регистрация
                   </h3>
                   <button class="accordion">Основное</button>
-                  <div class="panel">
+                  <div class="panel" style="max-height: 100%;">
                      <div class="registration__form-radios">
                         <span class="registration__form-text">Тип аккаунта</span>
                         <label for="radio-1" class="registration__form-radio form-radio">
@@ -174,7 +183,7 @@
                      </div>
                   </div>
                   <button class="accordion">Данные</button>
-                  <div class="panel">
+                  <div class="panel" style="max-height: 100%;">
                      <div class="registration__form-items">
                         <label class="registration__form-label" for="label-input1">ФИО / Название компании</label>
                         <input class="registration__form-input" type="text" id="label-input1"
@@ -305,8 +314,3 @@
          </div>
       </div>
    </footer>
-   <script src="js/main.min.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-</body>
-
-</html>
