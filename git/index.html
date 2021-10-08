@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="container">
+            <div class="header__inner">
+               <div class="header__logo">
+                  <a href="index.html" class="header__logo-link">
+                     <img src="images/logo.svg" alt="Logo">
+                  </a>
+               </div>
+               <div class="header__user">
+                  <a href="#"><img src="images/user.svg" alt="User"></a>
+                  <div class="header__user-links">
+                     <a href="#" class="header__user-link">useraccs4</a>
+                     <a href="#" class="header__user-link--arrow link">Выход</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <main class="main">
+         <div class="container">
+            <div class="wrapp">
+               <div class="left">
+                  <section class="filters">
+
+                     <form class="filters__form">
+                        <div class="filters__form-item accordian">
+                           <button class="filters__form-top accordian-title" type="button">
+                              <h5 class="filters__form-title">Сайты</h5>
+                              <img class="filters__form-arrow" src="images/arrow-bottom.svg" alt="Arrow">
+                           </button>
+                           <div class="filters__form-info">
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox1" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox1">6PM</label>
+                              </span>
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox2" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox2">bloomingdales</label>
+                              </span>
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox3" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox3">jomashop</label>
+                              </span>
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox4" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox4">macys</label>
+                              </span>
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox5" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox5">michaelkors</label>
+                              </span>
+                              <span class="filters__form-point">
+                                 <input class="filters__form-input" id="checkbox6" type="checkbox">
+                                 <label class="filters__form-label" for="checkbox6">saks</label>
+                              </span>
+                           </div>
+
+
+
+                        </div>
+                        <div class="filters__form-item accordian">
+                           <button class="filters__form-top accordian-title" type="button">
+                              <h5 class="filters__form-title">Выбор по параметрам</h5>
+                              <img class="filters__form-arrow" src="images/arrow-bottom.svg" alt="Arrow">
+                           </button>
+                           <div class="filters__form-sliders">
+                              <div class="filters__form-sliderr">
+                                 <span class="filters__form-span">Скидка в % от</span>
+                                 <output for="fader" id="volume" class="filters__form-volume">0</output>
+                                 <input type="range" class="filters__form-slider" min="0" max="600" value="0" step="1"
+                                    oninput="outputUpdate(value)">
+                              </div>
+                              <div class="filters__form-sliderr">
+                                 <span class="filters__form-span">Дней для сравнения:</span>
+                                 <output for="faders" id="hello" class="filters__form-volume">7</output>
+                                 <input type="range" class="filters__form-slider" min="0" max="600" value="0" step="1"
+                                    oninput="outputUpdate(value)">
+                              </div>
+                              <button class="filters__form-btn" type="submit">Применить</button>
+                           </div>
+                        </div>
+                     </form>
+                  </section>
+                  <div class="brands__inner brands__inner--style accordian">
+                     <div class="brands__top accordian-title">
+                        <h2 class="brands__title title">
+                           Бренды:
+                        </h2>
+                        <img class="filters__form-arrow" src="images/arrow-bottom.svg" alt="Arrow">
+                     </div>
+                     <div class="brands__info">
+                        <div class="brands__brand">
+                           <a href="#" class="brands__brand-link">
+                              ВСЕ
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Babe Sport
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Calvin Klein
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Calvin Klein Underwear
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Coach
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Columbia
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Columbia Kids
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              DKNY
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              GUESS
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Karl Lagerfeld Paris
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              LAUREN Ralph Lauren
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              New Balance
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Under Armour
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="right">
+                  <section class="brands">
+                     <div class="brands__inner brands__inner--media">
+                        <h2 class="brands__title title">
+                           Бренды:
+                        </h2>
+                        <div class="brands__brand">
+                           <a href="#" class="brands__brand-link">
+                              ВСЕ
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Babe Sport
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Calvin Klein
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Calvin Klein Underwear
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Coach
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Columbia
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Columbia Kids
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              DKNY
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              GUESS
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Karl Lagerfeld Paris
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              LAUREN Ralph Lauren
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              New Balance
+                           </a>
+                           <a href="#" class="brands__brand-link">
+                              Under Armour
+                           </a>
+                        </div>
+                     </div>
+                  </section>
+                  <section class="goods">
+                     <div class="goods__top">
+                        <h2 class="goods__title title">6PM</h2>
+                        <a href="#" class="goods__product link">
+                           Смотреть все товары
+                        </a>
+                     </div>
+                     <div class="goods__cards">
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-1.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-2.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-1.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-3.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-2.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-1.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-2.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-1.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-3.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+                        <article class="goods__card">
+                           <div class="goods__card-images">
+                              <img src="images/card-1.jpg" alt="Product">
+                           </div>
+                           <div class="goods__card-new">Babe Sport</div>
+                           <div class="goods__card-info">
+                              <a href="#" class="goods__card-title">
+                                 Embroidered Logo Hoodie
+                              </a>
+                              <div class="goods__card-price">
+                                 макс.Цена: <b>$62.30</b> <span>(-35.71%)</span>
+                              </div>
+                              <div class="goods__card-cost">
+                                 $40.05
+                              </div>
+                              <div class="goods__card-date">
+                                 2021-10-04 06:02:48
+                              </div>
+                           </div>
+                        </article>
+
+                     </div>
+                  </section>
+               </div>
+
+            </div>
+         </div>
+      </main>
+   </div>
+
+
+
+   <script src="js/main.min.js"></script>
+</body>
+
+</html>
+!
